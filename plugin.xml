@@ -5,8 +5,6 @@
     <license>MIT</license>
     <keywords></keywords>
 
-    <dependency id="cordova-plugin-firebasex" version="^9.1.1" />
-
     <!-- android -->
     <platform name="android">
         <js-module src="www/plugin.js" name="plugin">
