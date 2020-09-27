@@ -5,7 +5,7 @@
     <license>MIT</license>
     <keywords></keywords>
 
-    <dependency id="cordova-plugin-firebase" version="^2.0.5" />
+    <dependency id="cordova-plugin-firebasex" version="^9.1.1" />
 
     <!-- android -->
     <platform name="android">
@@ -22,8 +22,9 @@
             <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="ocr" />
         </config-file>
 
-        <framework src="com.google.firebase:firebase-ml-vision:+" />
-        <framework src="com.google.firebase:firebase-ml-vision-image-label-model:+" />
+        <framework src="com.google.firebase:firebase-ml-vision:24.0.3" />
+        <framework src="com.google.firebase:firebase-ml-vision-image-label-model:20.0.1" />
+        <framework src="com.google.guava:guava:27.0.1-android" />
 
         <source-file src="src/android/hr/antoniostipic/MlKitPlugin.java" target-dir="src/hr/antoniostipic" />
     </platform>
