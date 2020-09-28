@@ -19,6 +19,16 @@
   "peerDependencies": {
     "cordova-plugin-firebase": "^2.0.0"
   },
-  "homepage": "https://github.com/antoniostipic/cordova-ml-kit",
-  "repository": "antoniostipic/cordova-ml-kit"
+  "engines": {
+    "cordovaDependencies": {
+      "0.0.1": {
+        "cordova": ">=3.0.0"
+      },
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/felixhusen/cordova-ml-kit",
+  "repository": "felixhusen/cordova-ml-kit"
 }
