@@ -17,8 +17,8 @@
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="ocr" />
             <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="label" />
+            <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="ocr" />
         </config-file>
 
         <framework src="com.google.firebase:firebase-ml-vision:24.0.3" />

@@ -165,7 +165,7 @@ public class MlKitPlugin extends CordovaPlugin {
                   @Override
                   public void onSuccess(List<FirebaseVisionImageLabel> labels) {
 
-                    JSONObject json = new JSONObject();
+                    JSONArray json = new JSONArray();
                     
                     int i = 0;
                     for (FirebaseVisionImageLabel label: labels) {
@@ -176,11 +176,12 @@ public class MlKitPlugin extends CordovaPlugin {
                           float confidence = label.getConfidence();
 
                           JSONObject jsonObject = new JSONObject();
+                          jsonObject.put("description", text);
                           jsonObject.put("text", text);
                           jsonObject.put("entityId", entityId);
                           jsonObject.put("confidence", confidence);
 
-                          json.put(String.valueOf(i), jsonObject);
+                          json.put(jsonObject);
 
                           i = i + 1;
                       } catch (JSONException e) {
