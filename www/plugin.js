@@ -1,4 +1,3 @@
-const cordova = require("cordova");
 const PLUGIN_NAME = "MlKitPlugin";
 
 module.exports = {
